@@ -5,6 +5,6 @@ RUN apt-get update && apt-get install -y \
         mariadb-client \
         libssl-dev \
         --no-install-recommends \
-    && docker-php-ext-install pdo pdo_mysql php-intl \
+    && docker-php-ext-install pdo pdo_mysql intl \
     && pecl install mongodb \
     && docker-php-ext-enable mongodb \
