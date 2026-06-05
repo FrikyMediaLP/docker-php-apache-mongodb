@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y \
         mariadb-client \
         libssl-dev \
         libicu-dev \
+        ffmpeg \
+        imagemagick \
         --no-install-recommends \
     && docker-php-ext-install pdo pdo_mysql intl \
     && pecl install mongodb \
